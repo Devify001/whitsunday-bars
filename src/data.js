@@ -30,4 +30,11 @@ let barData = [
     summary: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     img: "images/img-4.jpg",
   },
+  {
+    id: "barFive",
+    name: "Anchor Bar",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+    summary: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+    img: "images/img-5.jpg",
+  },
 ];

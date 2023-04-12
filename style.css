@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+:root{
+    --bar-name-font: 'Montserrat',sans-serif;
+    --bar-name-font-size: 1.5em;
+    --bar-name-color: #187EA5;
+    --button-background: #00B4D8;
+    --button-font: 'Montserrat',sans-serif;
+    --button-font-size: 1em;
+}
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -80,6 +91,13 @@ body{
     border: solid 1px #00ff00;
 }
 
+.bar-name-heading { /*p element heading that is name of bar*/
+    font-family: var(--bar-name-font);
+    font-size: var(--bar-name-font-size);
+    font-weight: 300;
+    color: var(--bar-name-color);
+}
+
 .bar-description{ /*Article containing description of bar*/
     width: 100%;
     height: 5em; /*change later to fit content?*/
@@ -94,10 +112,23 @@ body{
         border: solid 1px #0000ff;
 }
 
-.website-link{ /*button linking to bar website*/
+.button-bar{ /*nav container parent of link buttons*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1em;
+    
+}
+
+.button-link{ /*button linking to bar website and review page*/
     width: 8em;
     height: 3em;
-    margin: 1em;
+    background-color:var(--button-background);
+    font-family: var(--button-font);
+    font-size: var(--button-font-size);
+    font-weight: 500;
+    color: #fff;
+    border: none;
 }
 
 

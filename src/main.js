@@ -33,7 +33,41 @@ let generateBarGuide = () => {
                 </article>
                 <div class="bar-information-wrapper">
                     <article class="bar-description">${description}</article>
-                    <aside class="bar-summary">${summary}</aside>
+                    <aside class="bar-summary">
+                        <h4>OPENING HOURS:</h4>
+                        <p>Monday:</p>
+                        <p>Tuesday:</p>
+                        <p>Wednesday:</p>
+                        <p>Thursday:</p>
+                        <p>Friday:</p>
+                        <p>Saturday:</p>
+                        <p>Sunday:</p>
+                        <h4>VENUE TYPE:</h4>
+                        <p></p>
+                        <h4>DINING AVAILABLE:</h4>
+                        <p></p>
+                        <h4>TYPICAL AGES:</h4>
+                        <p></p>
+                        <h4>SMOKING AREA:</h4>
+                        <p></p>
+                        <h4>GAMBLING:</h4>
+                        <p></p>
+                        <h4>CHILD FRIENDLY:</h4>
+                        <p></p>
+                        <h4>CUSTOMER RATING:</h4>
+                        <p></p>
+                        <br>
+                        <div class="google-maps">
+                            <img src="images/address-icon.png" alt="" width="20" height="20">
+                            <p class="find-on-google-p">Find on Google Maps</p>
+                        </figure>
+                        <p></p>
+                        <p></p>
+
+
+                    
+                    
+                    </aside>
                 </div>
                 <nav class="button-bar">
                     <button class="button-link">Go to website</button>

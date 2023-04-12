@@ -13,7 +13,6 @@
         <!-- Start of NavBar -->
         <nav class="navbar">
             <a href="#" class="nav-branding">Whitsunday Bars</a><!-- Company/website name goes here -->
-            
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
@@ -30,14 +29,29 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-
         </nav>
         <!-- End of NavBar -->
     </header>
     <!--End of Header-->
 
-    <main id="bar-guide" class="bar-guide">
-    </main>
+    <section class="tagline-and-list">
+        <article class="tagline"></article>
+        <article class="bar-list"></article>
+    </section>
+
+    <div class="dropdown-menu-wrapper">
+        <label for="cars">Sort By:</label>
+        <select id="sort" name="sort">
+                <option value="a-z">Alphabetical</option>
+                <option value="location">Location</option>
+                <option value="venue-type">Venue Type</option>
+                <option value="dining">Dining</option>
+            </select>
+    </div>
+    
+    <!--Start of Main section-->
+    <main id="bar-guide" class="bar-guide"></main>
+    <!--End of Main Section-->
 
 <script src="src/data.js"></script>  
 <script src="src/main.js"></script>     

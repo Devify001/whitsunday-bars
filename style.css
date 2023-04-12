@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
 :root{
+    --header-background: #00d68f;
+    --header-font: 'Montserrat',sans-serif;
     --bar-name-font: 'Montserrat',sans-serif;
     --bar-name-font-size: 1.5em;
     --bar-name-color: #187EA5;
     --button-background: #00B4D8;
     --button-font: 'Montserrat',sans-serif;
     --button-font-size: 1em;
+    --black: #21292e;
+    --green: #1fd1a8;
+    --grey: #626b7d;
+    --red: #f65a56;
+    --blue: #6f8ff8;
+    --sand: #ded4cb;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -20,7 +34,7 @@ body{
 **/
 
 header {
-    background-color: #000;
+    background-color:var(--button-background)
 }
 
 li {
@@ -30,29 +44,32 @@ li {
 a {
     color: #fff;
     text-decoration: none;
+    font-family: var(--header-font);
+    font-weight: 300;
 }
 
 .navbar {
     display: flex;
-    min-height: 70px;
+    height: fit-content;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0.5em 1em;;
 }
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 60px;
 }
 
 .nav-branding {
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 .nav-link {
     transition: 0.7s ease;
+    text-align: center;
 }
 
 .nav-link:hover {
@@ -121,6 +138,46 @@ a {
         /* when menu is active brings back into view */
         left: 0;
     }
+}
+
+/**
+* ? Section - Tagline and Bar List
+**/
+
+.tagline-and-list{ /*section wrapper*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.tagline{
+    width: 100%;
+    height: 5em;
+    border: solid 1px #000;
+}
+
+.bar-list{
+    width: 100%;
+    height: 5em;
+    border: solid 1px #000;
+}
+
+.dropdown-menu-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+label, select{
+    font-family: var(--bar-name-font);
+    font-size: 1em;
+    color:var(--black);
+    margin: 0 0.25em;
+}
+
+#sort{
+    width: 15em;
 }
 
 /**
@@ -214,17 +271,21 @@ a {
 }
 
 .bar-description{ /*Article containing description of bar*/
-    width: 65%;
+    width: 50%;
     height: 100%; /*change later to fit content?*/
-    padding: 0.5em;
+    padding: 1em;
     border: solid 1px #ff00ff
 }
 
 .bar-summary{ /*main points summarising bar*/
-    width: 35%;
+    width: 50%;
     height: 100%; /*change later to fit content?*/
-    padding: 0.5em;
+    /*padding-top: 1em;*/
     border: solid 1px #0000ff;
+}
+
+h4 {
+    margin-top: 0.5em;
 }
 
 .button-bar{ /*nav container parent of link buttons*/
@@ -244,6 +305,20 @@ a {
     font-weight: 500;
     color: #fff;
     border: none;
+}
+
+h4{
+    margin-top: 0.5em;
+}
+
+.google-maps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.find-on-google-p{
+    margin-left: 0.5em;
 }
 
 

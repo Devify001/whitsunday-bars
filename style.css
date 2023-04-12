@@ -4,7 +4,11 @@ body{
     padding: 0;
 }
 
-.bar-guide{ /*Container for individual bar information cards*/
+/**
+* ! CSS grid layout and breakpoints for main section
+**/
+
+.bar-guide{ /*Parent container of individual bar information containers*/
     display: grid;
 }
 
@@ -35,10 +39,48 @@ body{
     }
 }
 
-.individual-bar-content {
+/**
+* ! Styles for individual bar information container
+**/
+
+.individual-bar-content { /*individual bar information parent container*/
     display: flex;
     flex-direction: column;
-    height: 500px;
+    align-items: center; /*centers each child container*/
+    height: 520px;
     border: solid 1px #000;
+}
+
+.bar-image-container { /*container to hold image of bar*/
+    width: 90%;
+    height: 10em; /*change later to fit-content*/
+    margin: 1em;
+    border: solid 1px #ff0000;
+}
+
+.bar-name-container { /*container for name of bar*/
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    border: solid 1px #00ff00;
+}
+
+.bar-description{ /*Article containing description of bar*/
+    width: 100%;
+    height: 5em; /*change later to fit content?*/
+    margin: 1em;
+    border: solid 1px #ff00ff
+}
+
+.bar-summary{ /*main points summarising bar*/
+    width: 100%;
+        height: 5em; /*change later to fit content?*/
+        margin: 1em;
+        border: solid 1px #0000ff;
+}
+
+.website-link{ /*button linking to bar website*/
+    width: 8em;
+    height: 3em;
 }
 

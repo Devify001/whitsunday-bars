@@ -5,17 +5,23 @@ let barData = [
     location: "Airlie Beach Main Street",
     img: "images/img-1.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-    mon: "",
-    tue: "",
-    wed: "",
-    thur: "",
-    fri: "",
-    sat: "",
-    sun: "",
-
-
-
-    
+    mon: "10am - 12am",
+    tue: "10am - 12am",
+    wed: "10am - 12am",
+    thur: "10am - 12am",
+    fri: "10am - 2am",
+    sat: "10am - 2am",
+    sun: "10am - 12pm",
+    type: "Bar",
+    dining: false,
+    ages: "All Ages",
+    smoking: true,
+    gambling: true,
+    family: false,
+    music: true,
+    sports: true,
+    rating: 4.5,
+    maps: "https://goo.gl/maps/X6niqrstYaz69D9C6",
   },
 
   {

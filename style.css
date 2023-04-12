@@ -241,7 +241,7 @@ label, select{
     display: flex;
     flex-direction: column;
     align-items: center; /*centers each child container*/
-    height: 800px;
+    height: fit-content;
     padding: 1em;
     border: solid 1px #000;
 }
@@ -271,13 +271,13 @@ label, select{
 .bar-information-wrapper{
     display: flex;
     width: 100%;
-    height: 30em;
+    height: fit-content;
     margin-bottom: 1em;
 }
 
 .bar-description{ /*Article containing description of bar*/
     width: 50%;
-    height: 100%; /*change later to fit content?*/
+    height: fit-content; /*change later to fit content?*/
     padding: 1em;
     border: solid 1px #ff00ff
 }
@@ -293,7 +293,7 @@ h4 {
     font-family: var(--h4-font);
     font-size: 1em;
     color:var(--black);
-    margin: 0.5em 0 0.5em 0;
+    margin-top: 0.5em;
 }
 
 p{
@@ -320,10 +320,6 @@ p{
     font-weight: 500;
     color: #fff;
     border: none;
-}
-
-h4{
-    margin-top: 0.5em;
 }
 
 .google-maps{

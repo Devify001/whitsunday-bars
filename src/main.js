@@ -34,6 +34,8 @@ let generateBarGuide = () => {
                 <div class="bar-information-wrapper">
                     <article class="bar-description">${description}</article>
                     <aside class="bar-summary">
+                        <h4>LOCATION:</h4>
+                        <p></p>
                         <h4>OPENING HOURS:</h4>
                         <p>Monday:</p>
                         <p>Tuesday:</p>

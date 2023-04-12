@@ -9,6 +9,8 @@
     --button-background: #00B4D8;
     --button-font: 'Montserrat',sans-serif;
     --button-font-size: 1em;
+    --h4-font: 'Montserrat',sans-serif;
+    --p-font: 'Montserrat',sans-serif;
     --black: #21292e;
     --green: #1fd1a8;
     --grey: #626b7d;
@@ -165,19 +167,21 @@ a {
 
 .dropdown-menu-wrapper{
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    justify-content: space-evenly;
 }
 
 label, select{
     font-family: var(--bar-name-font);
     font-size: 1em;
     color:var(--black);
-    margin: 0 0.25em;
 }
 
 #sort{
-    width: 15em;
+    width: 10em;
+}
+
+#filter{
+    width: 10em;
 }
 
 /**
@@ -261,6 +265,7 @@ label, select{
     font-size: var(--bar-name-font-size);
     font-weight: 300;
     color: var(--bar-name-color);
+    padding: 0.5em;
 }
 
 .bar-information-wrapper{
@@ -285,7 +290,17 @@ label, select{
 }
 
 h4 {
-    margin-top: 0.5em;
+    font-family: var(--h4-font);
+    font-size: 1em;
+    color:var(--black);
+    margin: 0.5em 0 0.5em 0;
+}
+
+p{
+    font-family: var(--h4-font);
+    font-weight: 300;
+    color: var(--black);
+
 }
 
 .button-bar{ /*nav container parent of link buttons*/
@@ -319,6 +334,9 @@ h4{
 
 .find-on-google-p{
     margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    color:var(--grey);
+    font-weight: 300;
 }
 
 

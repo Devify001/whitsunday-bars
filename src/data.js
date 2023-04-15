@@ -30,6 +30,7 @@ let barData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     summary: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     img: "images/img-2.jpg",
+    dining: true,
   },
 
   {
@@ -38,6 +39,7 @@ let barData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     summary: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     img: "images/img-3.jpg",
+    dining: true,
   },
 
   {
@@ -46,6 +48,7 @@ let barData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     summary: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
     img: "images/img-4.jpg",
+    gambling: true,
   },
   {
     id: "anchor",

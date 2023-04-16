@@ -84,22 +84,15 @@ let generateBarGuide = () => {
 
 generateBarGuide();
 
-
-// JS filter function (needs to be refactored)
+//JS filter function (needs to be refactored)
 
 let result = []
-result = barData.filter((x) => x.gambling === true)
-console.log(result)
+result = barData.filter((x) => x.gambling === true);
 
-const gambling = document.querySelector("#filter");
-gambling.value = gambling.querySelector("option")[1];
-
-
-
-
-gambling.addEventListener ("change", () => {
-  return (barGuide.innerHTML = result.map((x) => {
-      let {id,name,location,description,img,mon,tue,wed,thur,fri,sat,sun,type,dining,ages,smoking,gambling,family,music,sports, rating,maps,} = x;
+let generateBarGuideFiltered = () => {
+  return (barGuide.innerHTML = result
+    .map((x) => {
+      let {id,name,location,description,img,mon,tue,wed,thur,fri,sat,sun,type,dining,ages,smoking,gambling,family,music,sports,rating,maps} = x;
       return `
             <section id="${id}" class="individual-bar-content">
                 <figure class="bar-image-container">
@@ -158,7 +151,14 @@ gambling.addEventListener ("change", () => {
         `;
     })
     .join(""));
-})
+};
+
+let gambling = document.querySelector("#filter")
+gambling.value = gambling.querySelector("option")[1]
+
+gambling.addEventListener("change", generateBarGuideFiltered)
+    
+
 
 
 

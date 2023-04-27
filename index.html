@@ -15,10 +15,10 @@
             <a href="#" class="nav-branding">Whitsunday Bars</a><!-- Company/website name goes here -->
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Specials & Events</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Instagram</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Contact</a>
@@ -39,6 +39,13 @@
         <article class="bar-list"></article>
     </section>
 
+    <div class="search-bar-wrapper"> <!-- Search Bar-->
+        <div class="search-label-and-input-wrapper">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search">
+        </div>
+    </div>
+
     <div class="dropdown-menu-wrapper">
         
         <div class="sort">
@@ -54,16 +61,12 @@
             <select id="filter" name="filter" class="dropdown">
                 <option id="dining" value="dining">Dining</option>
                 <option id="gambling" class="gambling" value="pokies-tab">Pokies/TAB</option>
-                <option value="smoking">Smoking Area</option>
-                <option value="family">Family Friendly</option>
-                <option value="age-1834">Ages(18-34)</option>
-                <option value="age-35">Ages(35+)</option>
-                <option value="age-all">All Ages</option>
-                <option value="bar">Bars</option>
-                <option value="bar-restaurant">Bar & Restaurant</option>
-                <option value="nightclub">Nightclubs</option>
-                <option value="music">Live Music</option>
-                <option value="sport">Sports</option>
+                <option id="age-all" value="age-all">All Ages</option>
+                <option id="age1830" value="age-1830">Ages 18-30</option>
+                <option id="music" value="music">Live Music</option>
+                <option id="sports" value="sport">Sports</option>
+                <option id="smoking" value="smoking">Smoking Area</option>
+                <option id="pool" value="pool">Pool Tables</option>
             </select>
         </div>
     </div>
@@ -73,6 +76,7 @@
     <!--End of Main Section-->
 
 <script src="src/data.js"></script>  
+<script src="src/filters.js"></script>
 <script src="src/main.js"></script>     
 </body>
 </html>
